@@ -1,0 +1,59 @@
+<section class="hero is-fullheight">
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-4 is-family-monospace" href="">
+            angulearn
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <span class="navbar-item">
+              <a
+                class="button is-large is-dark is-inverted"
+                target="_blank"
+                href="https://github.com/tolgayonter"
+              >
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li routerLinkActive="is-active">
+            <a routerLink="/passwords">passwords</a>
+          </li>
+          <li routerLinkActive="is-active"><a routerLink="/cards">cards</a></li>
+          <li routerLinkActive="is-active"><a routerLink="/pipes">pipes</a></li>
+          <li routerLinkActive="is-active"><a routerLink="/pages">pages</a></li>
+          <!-- <li><a routerLink="/comps">comps</a></li> -->
+          <li routerLinkActive="is-active">
+            <a routerLink="searches">searches</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="photos">photos</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="credits">credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>

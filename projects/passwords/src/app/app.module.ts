@@ -1,12 +1,28 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [{ path: '', component: AppComponent }];
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule],
+  imports: [CommonModule, RouterModule.forChild(routes)],
   providers: [],
+})
+export class AppSharedModule {
+  static forRoot(): ModuleWithProviders<AppSharedModule> {
+    return {
+      ngModule: AppSharedModule,
+      providers: [],
+    };
+  }
+}
+
+@NgModule({
+  imports: [BrowserModule, AppSharedModule.forRoot()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

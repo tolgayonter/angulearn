@@ -3,20 +3,18 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.css']
+  styleUrls: ['./accordion.component.css'],
 })
 export class AccordionComponent {
+  @Input() items: any = [];
 
-  @Input() items: any = []
-
-  openedItemIndex = 0
+  openedItemIndex = 0;
 
   onClick(index: number) {
     if (index === this.openedItemIndex) {
-      this.openedItemIndex = -1
+      this.openedItemIndex = -1;
     } else {
-      this.openedItemIndex = index
+      this.openedItemIndex = index;
     }
   }
-
 }

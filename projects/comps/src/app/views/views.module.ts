@@ -7,17 +7,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { SharedModule } from '../shared/shared.module';
 import { ItemListComponent } from './item-list/item-list.component';
 
-
 @NgModule({
-  declarations: [
-    ViewsHomeComponent,
-    StatisticsComponent,
-    ItemListComponent
-  ],
-  imports: [
-    CommonModule,
-    ViewsRoutingModule,
-    SharedModule
-  ]
+  declarations: [ViewsHomeComponent, StatisticsComponent, ItemListComponent],
+  imports: [CommonModule, ViewsRoutingModule, SharedModule],
 })
-export class ViewsModule { }
+export class ViewsModule {}

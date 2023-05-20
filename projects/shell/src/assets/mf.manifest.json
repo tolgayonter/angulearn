@@ -1,0 +1,10 @@
+{
+  "passwords": "http://localhost:4201/remoteEntry.js",
+  "cards": "http://localhost:4202/remoteEntry.js",
+  "pipes": "http://localhost:4203/remoteEntry.js",
+  "pages": "http://localhost:4204/remoteEntry.js",
+  "comps": "http://localhost:4205/remoteEntry.js",
+  "searches": "http://localhost:4206/remoteEntry.js",
+  "photos": "http://localhost:4207/remoteEntry.js",
+  "credits": "http://localhost:4208/remoteEntry.js"
+}

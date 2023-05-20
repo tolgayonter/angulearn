@@ -3,13 +3,11 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  styleUrls: ['./table.component.css'],
 })
 export class TableComponent {
+  @Input() classNames = '';
 
-  @Input() classNames = ''
-
-  @Input() data: {[key: string]: unknown}[] = []
-  @Input() headers: {key: string, label: string}[] = []
-
+  @Input() data: { [key: string]: unknown }[] = [];
+  @Input() headers: { key: string; label: string }[] = [];
 }
