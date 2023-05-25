@@ -25,7 +25,7 @@ export class AppSharedModule {
 }
 
 @NgModule({
-  imports: [BrowserModule, AppSharedModule.forRoot()],
+  imports: [BrowserModule, HttpClientModule, AppSharedModule.forRoot()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

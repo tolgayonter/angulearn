@@ -1,0 +1,9 @@
+{
+  "passwords": "https://angulearn-passwords.vercel.app/remoteEntry.js",
+  "cards": "https://angulearn-cards.vercel.app/remoteEntry.js",
+  "pipes": "https://angulearn-pipes.vercel.app/remoteEntry.js",
+  "pages": "https://angulearn-pages.vercel.app/remoteEntry.js",
+  "searches": "https://angulearn-searches.vercel.app/remoteEntry.js",
+  "photos": "https://angulearn-photos.vercel.app/remoteEntry.js",
+  "credits": "https://angulearn-credits.vercel.app/remoteEntry.js"
+}
